@@ -43,7 +43,7 @@ return [
     | env 模板文件路径
     |
     */
-    'env_example_path' => env('ENV_EXAMPLE_PATH', base_path()),
+    'env_example_path' => base_path(),
 
     /*
     |--------------------------------------------------------------------------
@@ -53,7 +53,7 @@ return [
     | env 模板文件名称
     |
     */
-    'env_example'=> env('ENV_EXAMPLE', '.env.example'),
+    'env_example'=> '.env.example',
 
     /*
     |--------------------------------------------------------------------------
@@ -63,7 +63,7 @@ return [
     | env 文件路径
     |
     */
-    'env_path' => env('ENV_PATH', base_path()),
+    'env_path' => base_path(),
 
     /*
     |--------------------------------------------------------------------------
@@ -73,5 +73,7 @@ return [
     | env 文件名称
     |
     */
-    'env' => env('ENV', '.env'),
+    'env' => '.env',
+    
+    'cache_path' => storage_path('apollo-cache')
 ];

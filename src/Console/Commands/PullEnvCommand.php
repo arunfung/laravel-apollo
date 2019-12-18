@@ -2,6 +2,7 @@
 
 namespace ArunFung\LaravelApollo\Console\Commands;
 
+use ArunFung\LaravelApollo\Apollo;
 use Illuminate\Console\Command;
 
 class PullEnvCommand extends Command
@@ -37,6 +38,7 @@ class PullEnvCommand extends Command
      */
     public function handle()
     {
-        //
+        $apollo = new Apollo();
+        $apollo->pullEnv();
     }
 }

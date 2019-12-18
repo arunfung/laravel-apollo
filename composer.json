@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": "^7.1",
-        "arunfung/php-apollo": "^0.0.2"
+        "arunfung/php-apollo": "^0.0.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0|^8.0",

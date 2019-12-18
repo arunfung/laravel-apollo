@@ -2,6 +2,7 @@
 
 namespace ArunFung\LaravelApollo;
 
+use ArunFung\LaravelApollo\Console\Commands\ListenChangeCommand;
 use ArunFung\LaravelApollo\Console\Commands\PullEnvCommand;
 use Illuminate\Support\ServiceProvider;
 
@@ -33,6 +34,7 @@ class ApolloServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 PullEnvCommand::class,
+                ListenChangeCommand::class,
             ]);
         }
     }
